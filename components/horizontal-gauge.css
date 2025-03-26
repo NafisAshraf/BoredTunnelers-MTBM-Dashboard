@@ -1,0 +1,50 @@
+.horizontalGauge-display {
+  width: 100%; /* Make the width responsive */
+  max-width: 500px; /* Set a maximum width to maintain design on larger screens */
+  padding: 10px;
+  background-color: transparent;
+  box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sensor-name {
+  font-size: 0.85em;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap; /* Prevent the name from breaking into the next line */
+  margin-right: 10px; /* Add margin to the right of the name */
+}
+
+.sensor-value {
+  font-size: 0.85em;
+  color: white;
+  min-width: 50px; /* Set a minimum width to prevent shrinking */
+  text-align: right; /* Align the text to the right */
+  white-space: nowrap; /* Prevent the value from breaking into the next line */
+}
+
+.sensor-bar {
+  width: 100%; /* Ensure the bar takes up the full width of its container */
+  height: 10px;
+  background-color: #7e7e7e;
+  overflow: hidden; /* Prevent overflow */
+  box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+.bar-fill {
+  height: 100%;
+  transition: width 0.5s ease;
+  box-sizing: border-box; /* Include padding in the element's total width */
+}
+/* .media-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+ gap: 20px; 
+  padding: 20px; 
+} */
